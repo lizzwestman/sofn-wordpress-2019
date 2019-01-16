@@ -1,0 +1,596 @@
+/* CSS Guide
+==================================================================================== 
+BASICS
+TYPOGRAPHY
+COLORS
+HEADER
+MAIN
+FOOTER
+HOMEPAGE
+LANDING PAGE RIGHT
+LANDING PAGE LEFT
+BLOG 
+                                                                                        */
+
+
+
+
+
+
+/* BASICS - SOFN STYLE STUFF
+====================================================================================    */
+
+html, body {
+    color: #464646;
+    background: #4bb1ca;
+    font-family: 'Noticia Text', serif;
+    font-size: 16px;
+    line-height: 1.75;
+    position: relative;
+}
+
+
+.below-20 {
+     margin-top: 10px;
+     margin-bottom: 20px;
+ }
+
+.below-30 {
+     margin-top: 15px;
+     margin-bottom: 30px;
+ }
+
+
+/* TYPOGRAPHY
+------------------------------------------------------ */
+
+
+
+a {
+text-decoration: none;
+color: #007f9d;
+}
+a:hover {
+text-decoration: none;
+color: #00a7ce;
+}
+a.link {
+text-decoration: none;
+color: inherit;
+}
+a.link:hover {
+text-decoration: underline;
+color: #00a7ce;
+}
+p {
+    margin-bottom: .5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    
+}
+
+.richtext p+h1, .richtext p+h2, .richtext p+h3, .richtext p+h4, .richtext p+h5, .richtext p+h6 {
+    margin-top: 1.25em;
+}
+
+
+
+
+/* COLORS
+------------------------------------------------------ */
+
+.dk-teal {color: #007f9d !important;}
+
+.red {color: #d7202a !important;}
+
+
+
+/* BUTTONS 
+------------------------------------------------------ */
+
+.btn, 
+.form_submit, 
+.fusion-secondary-header .btn, 
+.wrapper_btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid #d7202a;
+    border-radius: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d7202a !important;
+    background: #fff;
+    box-shadow: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    }
+
+.btn a, .wrapper_btn a, .fusion-secondary-header .btn a {
+    color: #d7202a;
+}
+.btn:hover, 
+.btn a:hover,
+.form_submit:hover, 
+.btn:focus, 
+.wrapper_btn a:hover, 
+.wrapper_btn a:focus, 
+.fusion-secondary-header .btn a:hover {
+    border-color: #d7202a;
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #d7202a;
+}
+
+
+
+
+
+
+/* HEADER 
+========================================================================================*/
+
+.logo {
+    float: left;
+    width: 193px;
+    height: 69px;
+    background: url('https://www2.sofn.com/wp-content/uploads/2019/01/sofn-logo-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+img .logo, 
+img .fusion-logo {
+    width: 193px;
+    height: 69px;
+    background: url('https://www2.sofn.com/wp-content/uploads/2019/01/sofn-logo.png-1');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logo-small {
+    float: left;
+    width: 176px;
+    height: 63px;
+    background: url('https://www2.sofn.com/wp-content/uploads/2019/01/sofn-logo-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+/* TOP MENU 
+----------------------------------------------------------------- */
+.fusion-body .fusion-mobile-menu-design-modern .fusion-secondary-header .fusion-alignleft {
+    text-align: left !important;
+    margin-left: 0px;
+    padding-left: 0px;
+    }   
+.fusion-secondary-menu > ul > li:first-child {
+    border: 0px rgba(255,255,255,.00) !important;
+    border-color: rgba(255,255,255,.00) !important;}
+
+
+.fusion-secondary-menu > ul > li:first-child {
+    border: 0px rgba(255,255,255,.00) !important;
+    border-color: rgba(255,255,255,.00) !important;}
+
+
+.fusion-secondary-menu>ul>li>img .logo, 
+.fusion-secondary-menu>ul>li>img .fusion-logo{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    padding: 0 1px 0 0px !important;
+}    
+    
+@media only screen and (max-width: 1019px){
+   .fusion-secondary-menu>ul>li>a {
+    padding: 0 8px !important;}
+    
+
+
+}
+
+@media only screen and (min-width: 1020px){
+    .fusion-secondary-menu>ul>li>a {
+    padding: 0 11px !important;}
+}
+
+
+
+
+
+
+
+
+
+/* MAIN MENU 
+----------------------------------------------------------------- */
+@media only screen and (min-device-width: 963px) and (max-device-width: 1002px) {
+    .fusion-header-v2 .fusion-main-menu > ul > li {
+        padding-right: 15px !important;
+        font-size: 13px !important;
+    }
+}
+
+
+@media only screen and (min-device-width: 1003px) and (max-device-width: 1024px) and (orientation: portrait){
+    .fusion-header-v2 .fusion-main-menu > ul > li {
+        padding-right: 20px !important;
+        font-size: 17px !important;
+    }
+}
+
+
+.fusion-main-menu {
+    float: left;
+    margin-left: 0px;
+}
+
+.fusion-main-menu .sub-menu,
+.fusion-main-menu .sub-menu li {
+   display:block;
+   float: none;
+   
+}  
+
+.fusion-main-menu .sub-menu li a, 
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a  {
+   width: auto;
+   font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+
+}  
+
+
+
+
+/* STICKY MENU 
+----------------------------------------------------------------- */
+
+.fusion-is-sticky .fusion-sticky-menu-1 .fusion-sticky-menu {
+    display: block;
+	height: 74px;
+}
+
+
+
+/* MOBILE MENU 
+----------------------------------------------------------------- */
+
+
+.fusion-mobile-nav-holder>ul {
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+}
+
+.fusion-mobile-nav-item {
+   
+}
+
+
+
+.fusion-mobile-menu-text-align-left .fusion-mobile-nav-item a, 
+.fusion-mobile-menu-text-align-left .fusion-mobile-selector {
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+  
+}
+
+
+/* PAGE TITLE BAR
+========================================================================================*/
+@media only screen and (max-width: 768px){
+    .fusion-page-title-captions {
+    padding-top: 5px !important;}
+}
+
+@media only screen and (min-width: 769px){
+.fusion-page-title-captions {
+    padding-top: 125px !important;}
+}
+
+
+.fusion-page-title-bar h1{
+    
+ }
+
+.fusion-page-title-bar h3 {
+   
+    font-family: 'Noticia Text', serif !important;
+    
+}
+
+
+
+
+
+/* LEFT SIDEBAR NAVIGATION (nav-sub)
+========================================================================================*/
+
+.nav-sub {
+margin: 0;
+background-color: #ededed;
+border-color: #cccccc;
+}
+
+.nav-sub ul, nav.nav-sub ul li {
+margin: 0;
+padding: 0;
+list-style: none;
+border-bottom: 1px solid #cccccc !important;
+
+}
+.nav-sub>ul>li {
+border-bottom: 1px solid #cccccc !important;
+}
+.nav-sub>ul>.last {
+border-bottom: 1px solid #cccccc !important;
+}
+
+.nav-sub a {
+display: block;
+padding: 8px;
+text-decoration: none;
+font-family: 'Montserrat', "Montserrat", Montserrat, Helvetica, sans-serif;
+font-weight: normal !important;
+font-size: 18px;
+color: #4bb1ca;
+}
+.nav-sub ul ul {
+padding-bottom: 5px;
+border-bottom: 1px solid #cccccc !important;
+
+}
+.nav-sub ul ul li {
+border-bottom: 1px solid #777777 !important;
+
+    
+}
+.nav-sub ul ul li:last-child {
+border-bottom: 0px solid #eeeeee !important;
+}
+
+.nav-sub ul ul ul {
+padding-bottom: 10px;
+border-bottom: 1px solid #666666 !important;
+
+}
+.nav-sub ul ul ul li {
+border-bottom: 1px solid #aaaaaa !important;
+}
+
+
+
+.nav-sub ul ul ul ul {
+padding-bottom: 10px;
+border-bottom: 1px solid #666666 !important;
+
+}
+.nav-sub ul ul ul ul li {
+border-bottom: 1px solid #cccccc !important;
+}
+
+
+.nav-sub ul ul a {
+font-size: 14px;
+padding: 3px 8px 6px 30px;
+background-color: inherit;
+}
+
+.nav-sub ul ul a.current, 
+.nav-sub ul ul a.active,
+.nav-sub ul ul a:active,  
+.nav-sub ul ul li a:active,
+.nav-sub ul ul li a.current, 
+.nav-sub ul ul li a.active,
+.menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item {
+    color: #464646 !important;
+    border-right-color: #007f9d !important;
+}
+
+.fusion-vertical-menu-widget .menu li.current_page_ancestor > a {
+ color: #464646;
+ }
+
+
+.fusion-vertical-menu-widget .menu li.current_page_item {
+    border-bottom: 1px solid #cccccc !important;
+
+}
+
+.fusion-vertical-menu-widget .menu li.current_page_item > a {
+    border-right-color: #007f9d  !important;
+    color: #464646 !important;
+    background-color: rgba(229,229,229,0.85) !important;
+   
+}
+
+
+
+.fusion-vertical-menu-widget .menu li.current-menu-item > a, 
+.fusion-widget-area .current-menu-item > a,
+.fusion-widget-area .current_page_item > a {
+    color: #464646 !important;
+}
+
+
+.nav-sub ul ul ul a {
+font-size: 12px;
+padding: 0 8px 4px 40px;
+}
+.nav-sub ul ul ul ul a {
+padding: 0 8px 4px 50px;
+}
+.nav-sub .current, .nav-sub .parent {
+color:  #4bb1ca;
+
+}
+
+.fusion-content-widget-area .widget li a {
+}
+
+.fusion-content-widget-area .widget li a:hover,
+.nav-sub a:hover, 
+.nav-sub .current:hover {
+background-color: #f7f7f7 !important;
+color: #012c36;
+}
+
+
+
+
+#wrapper .fusion-vertical-menu-widget.no-border.left .menu li a .arrow {
+    padding-right: 0;
+    width: 15px;
+    text-align: right;
+    
+}
+
+
+
+
+
+
+
+
+
+/* BREADCRUMB
+========================================================================================*/
+.fusion-breadcrumbs,
+.breadcrumb_component {
+width: 75%;
+float: left;
+padding: 0;
+}
+
+.fusion-breadcrumbs,
+.breadcrumb_component {
+margin: 0 0 20px;
+padding: 0;
+list-style: none;
+}
+.fusion-breadcrumbs,
+.breadcrumb_component li {
+margin: 0 3px;
+padding: 0;
+list-style: none;
+display: inline-block;
+*display: inline;
+}
+.fusion-breadcrumbs,
+.breadcrumb_component li {
+list-style: none;
+display: inline-block;
+font-size: 12px !important;
+color: #656565;
+}
+.fusion-breadcrumbs,
+.breadcrumb_component li a.breadcrumb_component_home {
+text-decoration: none;
+color: #007f9d;
+list-style: none;
+display: inline-block;
+font-size: 12px;
+color: #656565;
+}
+.fusion-breadcrumbs,
+.breadcrumb_component li.breadcrumb_component_current {
+list-style: none;
+display: inline-block;
+font-size: 12px;
+color: #656565;
+}
+
+
+
+
+
+
+
+
+
+
+/* HOME PAGE
+====================================================================================== */
+
+#callout {
+background: #eeeeee;
+background-color: #eeeeee;
+}
+#callout .feature {
+padding-top: 12px;
+}
+.fusion-content-boxes .content-container {
+margin-bottom: 0px;
+}
+
+.fusion-content-boxes.content-boxes-icon-boxed .content-container,
+.fusion-content-boxes.content-boxes-icon-boxed .fusion-read-more {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.content-callout-box {
+    
+}
+
+.callout-button {
+float: left;
+margin-top: 100px;
+}
+
+.link_box {
+margin-bottom: 20px
+}
+
+.linkbox-content {
+float: left;
+margin: 0;
+padding: 20px 82px 20px 22px;
+}
+.caption_credit {
+clear: left;
+margin-bottom: 15px;
+display: block;
+}
+
+
+
+
+
+
+/*BLOG POST
+====================================================================================== */
+.fusion-meta-info {
+   
+    }
+
+
+#wrapper #main .post > h2.fusion-post-title {
+    color: #464646 !important; 
+    font-size: 30px !important;
+    margin-bottom: .5em;
+}    
+
+/* xxxx 
+====================================================================================== *
