@@ -1,0 +1,27 @@
+IMPORTANT:
+-----------------------------------------------------------------------------------------
+
+We are always proactive in preventing security issues, however nobody can assume they will never come up.
+This is why we highly recommend to stay up to date with each new plugin version.
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.1 - January 15th, 2018
+-----------------------------------------------------------------------------------------
+
+
+- NEW: Added a new settings page for Fusion Slider to allow fine tuned control
+- FIXED: Load text domain missing
+- FIXED: Menu items not being removed from admin bar for disabled admin menus
+- FIXED: Theme Options admin bar menu label not being changed correctly
+- FIXED: Admin menu name changes not respected for user roles other than administrator
+- FIXED: The icon of the FWLB admin menu is missing if Avada or Fusion Builder are bot active
+- FIXED: Fatal error happening if Fusion Builder is not activated
+- FIXED: Setting to remove the lost password link on login screen only working for English language
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0 - December 19th, 2017
+-----------------------------------------------------------------------------------------
+
+- First version of the plugin
