@@ -1,25 +1,6 @@
-/* CSS Guide
+/* CSS Custom Template for Sons of Norway Wordpress Resign 
+- Based on the Avada Style Template 
 ==================================================================================== 
-BASICS
-TYPOGRAPHY
-COLORS
-HEADER
-MAIN
-FOOTER
-HOMEPAGE
-LANDING PAGE RIGHT
-LANDING PAGE LEFT
-BLOG 
-                                                                                        */
-
-
-
-
-
-
-/* BASICS - SOFN STYLE STUFF
-====================================================================================    */
-
 html, body {
     color: #464646;
     background: #4bb1ca;
@@ -29,16 +10,6 @@ html, body {
     position: relative;
 }
 
-
-.below-20 {
-     margin-top: 10px;
-     margin-bottom: 20px;
- }
-
-.below-30 {
-     margin-top: 15px;
-     margin-bottom: 30px;
- }
 
 
 /* TYPOGRAPHY
@@ -67,9 +38,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif !important;
-    
-}
+	font-family: 'Montserrat', sans-serif !important;}
 
 .richtext p+h1, .richtext p+h2, .richtext p+h3, .richtext p+h4, .richtext p+h5, .richtext p+h6 {
     margin-top: 1.25em;
@@ -89,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BUTTONS 
 ------------------------------------------------------ */
-
 .btn, 
 .form_submit, 
 .fusion-secondary-header .btn, 
@@ -208,10 +176,7 @@ img .fusion-logo {
 @media only screen and (max-width: 1019px){
    .fusion-secondary-menu>ul>li>a {
     padding: 0 8px !important;}
-    
-
-
-}
+ }
 
 @media only screen and (min-width: 1020px){
     .fusion-secondary-menu>ul>li>a {
@@ -220,19 +185,12 @@ img .fusion-logo {
 
 
 
-
-
-
-
-
-
 /* MAIN MENU 
 ----------------------------------------------------------------- */
 @media only screen and (min-device-width: 963px) and (max-device-width: 1002px) {
     .fusion-header-v2 .fusion-main-menu > ul > li {
         padding-right: 15px !important;
-        font-size: 13px !important;
-    }
+        font-size: 13px !important;}
 }
 
 
@@ -246,22 +204,17 @@ img .fusion-logo {
 
 .fusion-main-menu {
     float: left;
-    margin-left: 0px;
-}
+    margin-left: 0px;}
 
 .fusion-main-menu .sub-menu,
 .fusion-main-menu .sub-menu li {
    display:block;
-   float: none;
-   
-}  
+   float: none;}  
 
 .fusion-main-menu .sub-menu li a, 
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a  {
    width: auto;
-   font-family: Montserrat, Arial, Helvetica, sans-serif !important;
-
-}  
+   font-family: Montserrat, Arial, Helvetica, sans-serif !important;}  
 
 
 
@@ -270,8 +223,8 @@ img .fusion-logo {
 ----------------------------------------------------------------- */
 
 .fusion-is-sticky .fusion-sticky-menu-1 .fusion-sticky-menu {
-    display: block;
-	height: 74px;
+ display: block;
+height: 74px;
 }
 
 
@@ -284,17 +237,9 @@ img .fusion-logo {
     font-family: Montserrat, Arial, Helvetica, sans-serif !important;
 }
 
-.fusion-mobile-nav-item {
-   
-}
-
-
-
 .fusion-mobile-menu-text-align-left .fusion-mobile-nav-item a, 
 .fusion-mobile-menu-text-align-left .fusion-mobile-selector {
-    font-family: Montserrat, Arial, Helvetica, sans-serif !important;
-  
-}
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;}
 
 
 /* PAGE TITLE BAR
@@ -309,16 +254,8 @@ img .fusion-logo {
     padding-top: 125px !important;}
 }
 
-
-.fusion-page-title-bar h1{
-    
- }
-
 .fusion-page-title-bar h3 {
-   
-    font-family: 'Noticia Text', serif !important;
-    
-}
+    font-family: 'Noticia Text', serif !important;}
 
 
 
@@ -522,14 +459,6 @@ color: #656565;
 }
 
 
-
-
-
-
-
-
-
-
 /* HOME PAGE
 ====================================================================================== */
 
@@ -575,15 +504,10 @@ display: block;
 }
 
 
-
-
-
-
 /*BLOG POST
 ====================================================================================== */
 .fusion-meta-info {
-   
-    }
+   }
 
 
 #wrapper #main .post > h2.fusion-post-title {
@@ -592,5 +516,3 @@ display: block;
     margin-bottom: .5em;
 }    
 
-/* xxxx 
-====================================================================================== *
