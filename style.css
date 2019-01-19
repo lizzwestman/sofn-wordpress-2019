@@ -1,0 +1,362 @@
+/*
+Theme Name: Sons of Norway 
+Description: SOFN brand site as used with the Avada Template
+Author: Lizz Westman
+Theme URI: https://sofn.com/
+Author URI: https://lizzwestman.net/design/sofn/sofn-design.html
+Version: 1
+License: Themeforest Split Licence
+License URI: -
+Text Domain: SOFN
+*/
+
+/* Classes needed by Theme Check 
+=======================================================================================*/
+.wp-caption-text,
+.gallery-caption,
+.bypostauthor {
+}
+
+html, body {
+    color: #464646;
+    background: #4bb1ca;
+    font-family: 'Noticia Text', serif;
+    font-size: 16px;
+    line-height: 1.75;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif !important;}
+
+.logo {
+    float: left;
+    width: 193px;
+    height: 69px;
+    background: url('https://www2.sofn.com/wp-content/uploads/2019/01/sofn-logo-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;}
+
+img .logo, 
+img .fusion-logo {
+    width: 193px;
+    height: 69px;
+    background: url('https://www2.sofn.com/wp-content/uploads/2019/01/sofn-logo.png-1');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;}
+
+/* TOP MENU 
+----------------------------------------------------------------- */
+.fusion-body .fusion-mobile-menu-design-modern .fusion-secondary-header .fusion-alignleft {
+    margin-left: 0px;
+    padding-left: 0px;
+    }   
+.fusion-secondary-menu > ul > li:first-child {
+    border: 0px rgba(255,255,255,.00) !important;
+    border-color: rgba(255,255,255,.00) !important;}
+
+.fusion-secondary-menu>ul>li>img .logo, 
+.fusion-secondary-menu>ul>li>img .fusion-logo{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    padding: 0 1px 0 0px !important;
+}    
+
+@media only screen and (max-device-width: 640px) {
+        
+}
+
+
+@media only screen and (min-device-width: 640px) and (max-device-width: 768px) {        
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {     
+}
+
+@media only screen and (min-device-width: 1024px) {
+        
+}
+
+/* MAIN MENU 
+----------------------------------------------------------------- */
+@media only screen and (max-device-width: 640px) {
+        
+}
+
+@media only screen and (min-device-width: 640px) and (max-device-width: 768px) {
+    .fusion-header-v2 .fusion-main-menu > ul > li {}
+        
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .fusion-header-v2 .fusion-main-menu > ul > li {}
+        
+}
+
+
+@media only screen and (min-device-width: 1024px) {
+        
+}
+
+
+
+
+.fusion-main-menu {
+    float: left;
+    margin-left: 0px;}
+
+.fusion-main-menu .sub-menu,
+.fusion-main-menu .sub-menu li {
+   display:block;
+   float: none;}  
+
+.fusion-main-menu .sub-menu li a, 
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a  {
+   width: auto;
+   font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+
+}  
+
+
+/* STICKY MENU 
+----------------------------------------------------------------- */
+.fusion-is-sticky .fusion-sticky-menu-1 .fusion-sticky-menu {
+    display: block;
+	height: 74px;
+}
+
+
+
+/* STICKY MENU 
+----------------------------------------------------------------- */
+
+.fusion-is-sticky .fusion-sticky-menu-1 .fusion-sticky-menu {
+    display: block;
+	height: 74px;}
+
+
+/* MOBILE MENU 
+----------------------------------------------------------------- */
+
+.fusion-mobile-nav-holder>ul {
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;}
+
+.fusion-mobile-nav-item {
+}
+
+
+
+.fusion-mobile-menu-text-align-left .fusion-mobile-nav-item a, 
+.fusion-mobile-menu-text-align-left .fusion-mobile-selector {
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;}
+
+
+/* PAGE TITLE BAR
+========================================================================================*/
+
+.layout-wide-mode .fusion-page-title-row {
+    max-width: 1200px;}
+
+.fusion-page-title-bar {
+    padding-top: 130px !important;}
+
+.fusion-page-title-bar h1{  }
+
+.fusion-page-title-bar h3 {
+    font-family: 'Noticia Text', serif !important;
+    padding: 0px 45px !important;}
+
+/* LEFT SIDEBAR NAVIGATION (nav-sub)
+========================================================================================*/
+
+.nav-sub {
+margin: 0;
+background-color: #eeeeee;
+border-color: #dddddd;
+}
+
+.nav-sub a {
+display: block;
+padding: 8px;
+text-decoration: none;
+font-family: 'Montserrat', "Montserrat", Montserrat, Helvetica, sans-serif;
+font-weight: normal !important;
+font-size: 18px;
+color: #4bb1ca;}
+
+.nav-sub a:hover {}
+.nav-sub .current:hover {}
+
+
+.nav-sub ul, 
+nav.nav-sub ul {
+margin: 0;
+padding: 0;
+list-style: none;
+border-bottom: 1px solid #cccccc !important;}
+.nav-sub>ul>.last {}
+.nav-sub>ul>li {}
+.nav-sub ul a {}
+
+
+.nav-sub ul ul {
+padding-bottom: 5px;
+border-bottom: 1px solid #999999 !important;}
+.nav-sub ul ul li {}
+.nav-sub ul ul li:last-child {}
+
+.nav-sub ul ul a {
+font-size: 14px;
+padding: 3px 8px 6px 30px;}
+
+.nav-sub ul ul a.current, 
+.nav-sub ul ul a.active,
+.nav-sub ul ul a:active,  
+.nav-sub ul ul li a:active,
+.nav-sub ul ul li a.current, 
+.nav-sub ul ul li a.active,
+.menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item {
+    color: #464646 !important;
+    border-right-color: #007f9d !important;
+    background-color: #e3e3e3 !important;
+}
+
+
+.nav-sub ul ul ul {
+padding-bottom: 10px;}
+.nav-sub ul ul ul li {}
+.nav-sub ul ul ul a {
+font-size: 12px;
+padding: 0 8px 4px 40px;}
+
+.nav-sub ul ul ul ul {
+padding-bottom: 10px;}
+.nav-sub ul ul ul ul li {}
+.nav-sub ul ul ul ul a {
+font-size: 12px;
+padding: 0 8px 4px 50px;}
+
+
+
+.nav-sub .current, .nav-sub .parent {
+color:  #656565;}
+
+.fusion-vertical-menu-widget .menu li.current_page_ancestor > a {}
+
+
+.fusion-vertical-menu-widget .menu li.current_page_item {}
+.fusion-vertical-menu-widget .menu li.current_page_item > a {
+    border-right-color: #007f9d  !important;
+    color: #464646 !important;
+    background-color: rgba(221, 221, 221, 0.91) !important;}
+
+
+.fusion-widget-area .current_page_item > a {}
+
+.fusion-widget-area .current-menu-item > a {}
+
+
+
+.fusion-content-widget-area .widget li a {}
+.fusion-content-widget-area .widget li a:hover {}
+
+
+.fusion-vertical-menu-widget.no-border.left .menu li a .arrow {
+    padding-right: 0;
+    width: 15px;
+    text-align: right;}
+
+
+/* BREADCRUMB
+========================================================================================*/
+.fusion-breadcrumbs,
+.breadcrumb_component {
+width: 75%;
+float: left;
+padding: 0;
+}
+
+.fusion-breadcrumbs,
+.breadcrumb_component {
+margin: 0 0 20px;
+padding: 0;
+list-style: none;}
+.fusion-breadcrumbs,
+.breadcrumb_component li {
+margin: 0 3px;
+padding: 0;
+list-style: none;
+display: inline-block;
+*display: inline;}
+.fusion-breadcrumbs,
+.breadcrumb_component li {
+list-style: none;
+display: inline-block;
+font-size: 12px !important;
+color: #656565;}
+.fusion-breadcrumbs,
+.breadcrumb_component li a.breadcrumb_component_home {
+text-decoration: none;
+color: #007f9d;
+list-style: none;
+display: inline-block;
+font-size: 12px;
+color: #656565;}
+.fusion-breadcrumbs,
+.breadcrumb_component li.breadcrumb_component_current {
+list-style: none;
+display: inline-block;
+font-size: 12px;
+color: #656565;}
+
+
+
+/* HOME PAGE
+====================================================================================== */
+
+#callout {
+background: #eeeeee;
+background-color: #eeeeee;}
+
+#callout .feature {
+padding-top: 12px;}
+.fusion-content-boxes .content-container {
+margin-bottom: 0px;}
+
+.fusion-content-boxes.content-boxes-icon-boxed .content-container,
+.fusion-content-boxes.content-boxes-icon-boxed .fusion-read-more {
+text-align: center;
+margin-bottom: 10px;}
+
+.content-callout-box {}
+
+.callout-button {
+float: left;
+margin-top: 100px;}
+
+.link_box {
+margin-bottom: 20px}
+
+.linkbox-content {
+float: left;
+margin: 0;
+padding: 20px 82px 20px 22px;}
+
+.caption_credit {
+clear: left;
+margin-bottom: 15px;
+display: block;}
+
