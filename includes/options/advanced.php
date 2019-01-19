@@ -22,14 +22,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return array
  */
 function avada_options_section_advanced( $sections ) {
-	$settings = get_option( Avada::get_option_name() );
 
-	// Is the JS compiler enabled?
-	$is_http2 = Fusion_Dynamic_JS::is_http2();
-	if ( $is_http2 ) {
-		$js_compiler_enabled = ( isset( $settings['js_compiler'] ) && ( '1' === $settings['js_compiler'] || 1 === $settings['js_compiler'] || true === $settings['js_compiler'] ) );
-	} else {
-		$js_compiler_enabled = ( ! isset( $settings['js_compiler'] ) || ( '1' === $settings['js_compiler'] || 1 === $settings['js_compiler'] || true === $settings['js_compiler'] ) );
+	$embed_types = array();
+	if ( class_exists( 'Avada_Privacy_Embeds' ) ) {
+		$embed_types    = Avada()->privacy_embeds->get_embed_defaults( true );
+		$embed_defaults = array_keys( $embed_types );
 	}
 
 	$sections['advanced'] = array(
@@ -221,16 +218,9 @@ function avada_options_section_advanced( $sections ) {
 						'default'     => '1',
 						'type'        => 'switch',
 					),
-					'status_outline' => array(
-						'label'       => esc_html__( 'CSS Outlines', 'Avada' ),
-						'description' => esc_html__( 'Turn on to enable browser specific CSS element outlines used to improve accessibility.', 'Avada' ),
-						'id'          => 'status_outline',
-						'default'     => '0',
-						'type'        => 'switch',
-					),
 					'status_opengraph' => array(
 						'label'       => esc_html__( 'Open Graph Meta Tags', 'Avada' ),
-						'description' => __( 'Turn on to enable open graph meta tags which are mainly used when sharing pages on social networking sites like Facebook. <strong>IMPORTANT:</strong> Some optimization plugins, like e.g. Yoast SEO, add their own implementation of this, and if you want to use that, this option should be disabled.', 'Avada' ),
+						'description' => esc_html__( 'Turn on to enable open graph meta tags which is mainly used when sharing pages on social networking sites like Facebook.', 'Avada' ),
 						'id'          => 'status_opengraph',
 						'default'     => '1',
 						'type'        => 'switch',
@@ -271,14 +261,109 @@ function avada_options_section_advanced( $sections ) {
 						),
 					),
 					'disable_rich_snippet_date' => array(
-						'label'       => esc_html__( 'Rich Snippets Last Update Date', 'Avada' ),
-						'description' => esc_html__( 'Turn on to enable udate date rich snippet data site wide.', 'Avada' ),
+						'label'       => esc_html__( 'Rich Snippets Publish Date', 'Avada' ),
+						'description' => esc_html__( 'Turn on to enable date rich snippet data site wide.', 'Avada' ),
 						'id'          => 'disable_rich_snippet_date',
 						'default'     => '1',
 						'type'        => 'switch',
 						'required'    => array(
 							array(
 								'setting'  => 'disable_date_rich_snippet_pages',
+								'operator' => '==',
+								'value'    => '1',
+							),
+						),
+					),
+				),
+			),
+			'privacy' => array(
+				'label'       => esc_html__( 'Privacy', 'Avada' ),
+				'id'          => 'privacy_section',
+				'icon'        => true,
+				'type'        => 'sub-section',
+				'fields'      => array(
+					'privacy_note' => array(
+						'label'       => '',
+						'description' => '<div class="fusion-redux-important-notice">' . __( '<strong>IMPORTANT NOTE:</strong> The options in this section will help to easier comply with data privacy regulations, like the European GDPR. When the "Embeds Privacy" option is used, Avada will create a cookie with the name <b>"privacy_embeds"</b> on user clients browsing your site to manage and store user consent to load the different third party embeds. You may want to add information about this cookie to your privacy page.', 'Avada' ) . '</div>',
+						'id'          => 'privacy_note',
+						'type'        => 'custom',
+					),
+					'gfonts_load_method' => array(
+						'id'          => 'gfonts_load_method',
+						'label'       => esc_html__( 'Google Fonts Mode', 'Avada' ),
+						'description' => esc_html__( 'When set to "Local", the Google fonts set in Theme Options will be downloaded to your server. Set to "CDN" to use the Google CDN.', 'Avada' ),
+						'type'        => 'radio-buttonset',
+						'default'     => 'cdn',
+						'choices'     => array(
+							'local' => esc_attr__( 'Local', 'Avada' ),
+							'cdn'   => esc_attr__( 'CDN', 'Avada' ),
+						),
+					),
+					'privacy_embeds' => array(
+						'label'       => esc_html__( 'Embeds Privacy', 'Avada' ),
+						'description' => esc_html__( 'Turn on to prevent embeds from loading until user consent is given.', 'Avada' ),
+						'id'          => 'privacy_embeds',
+						'default'     => '0',
+						'type'        => 'switch',
+					),
+					'privacy_expiry' => array(
+						'label'       => esc_html__( 'Embeds Cookie Expiration', 'Avada' ),
+						'description' => esc_html__( 'Controls how long the consent cookie should be stored for.  In days.', 'Avada' ),
+						'id'          => 'privacy_expiry',
+						'default'     => '30',
+						'type'        => 'slider',
+						'choices'     => array(
+							'min'  => '1',
+							'max'  => '366',
+							'step' => '1',
+						),
+						'required'    => array(
+							array(
+								'setting'  => 'privacy_embeds',
+								'operator' => '==',
+								'value'    => '1',
+							),
+						),
+					),
+					'privacy_embed_types' => array(
+						'label'       => esc_html__( 'Embed Types', 'Avada' ),
+						'description' => esc_html__( 'Select the types of embeds which you would like to require consent.', 'Avada' ),
+						'id'          => 'privacy_embed_types',
+						'default'     => $embed_defaults,
+						'type'        => 'select',
+						'multi'       => true,
+						'choices'     => $embed_types,
+						'required'    => array(
+							array(
+								'setting'  => 'privacy_embeds',
+								'operator' => '==',
+								'value'    => '1',
+							),
+						),
+					),
+					'privacy_bg_color' => array(
+						'label'       => esc_html__( 'Embed Placeholder Background Color', 'Avada' ),
+						'description' => esc_html__( 'Controls the background color for the embed placeholders.', 'Avada' ),
+						'id'          => 'privacy_bg_color',
+						'type'        => 'color-alpha',
+						'default'     => 'rgba(0,0,0,0.1)',
+						'required'    => array(
+							array(
+								'setting'  => 'privacy_embeds',
+								'operator' => '==',
+								'value'    => '1',
+							),
+						),
+					),
+					'privacy_color' => array(
+						'label'       => esc_html__( 'Embed Placeholder Text Color', 'Avada' ),
+						'description' => esc_html__( 'Controls the text color for the embed placeholders.', 'Avada' ),
+						'id'          => 'privacy_color',
+						'type'        => 'color-alpha',
+						'default'     => 'rgba(0,0,0,0.3)',
+						'required'    => array(
+							array(
+								'setting'  => 'privacy_embeds',
 								'operator' => '==',
 								'value'    => '1',
 							),
@@ -304,13 +389,6 @@ function avada_options_section_advanced( $sections ) {
 							'off'  => esc_attr__( 'Disabled', 'Avada' ),
 						),
 					),
-					'media_queries_async' => array(
-						'label'       => esc_attr__( 'Load Media-Queries Files Asynchronously', 'Avada' ),
-						'description' => esc_attr__( 'When enabled, the CSS media-queries will be enqueued separately and then loaded asynchronously, improving performance on mobile and desktop.', 'Avada' ),
-						'id'          => 'media_queries_async',
-						'default'     => '0',
-						'type'        => 'switch',
-					),
 					'cache_server_ip' => array(
 						'label'       => esc_html__( 'Cache Server IP', 'Avada' ),
 						'description' => esc_html__( 'For unique cases where you are using cloud flare and a cache server, ex: varnish cache. Enter your cache server IP to clear the theme options dynamic CSS cache. Consult with your server admin for help.', 'Avada' ),
@@ -318,7 +396,7 @@ function avada_options_section_advanced( $sections ) {
 						'default'     => '',
 						'type'        => 'text',
 					),
-					'js_compiler_note' => ( apply_filters( 'fusion_compiler_js_file_is_readable', ( get_transient( 'fusion_dynamic_js_readable' ) || ! $js_compiler_enabled ) ) ) ? array() : array(
+					'js_compiler_note' => ( apply_filters( 'fusion_compiler_js_file_is_readable', get_transient( 'fusion_dynamic_js_readable' ) ) ) ? array() : array(
 						'label'       => '',
 						'description' => '<div class="fusion-redux-important-notice">' . __( '<strong>IMPORTANT NOTE:</strong> JS Compiler is disabled. File does not exist or access is restricted.', 'Avada' ) . '</div>',
 						'id'          => 'js_compiler_note',
@@ -326,9 +404,9 @@ function avada_options_section_advanced( $sections ) {
 					),
 					'js_compiler' => array(
 						'label'       => esc_html__( 'Enable JS Compiler', 'Avada' ),
-						'description' => ( $is_http2 ) ? esc_html__( 'We have detected that your server supports HTTP/2. We recommend you leave the compiler disabled as that will improve performance of your site by allowing multiple JS files to be downloaded simultaneously.', 'Avada' ) : esc_html__( 'By default all the javascript files are combined. Disabling the JS compiler will load non-combined javascript files. This will have an impact on the performance of your site.', 'Avada' ),
+						'description' => ( Fusion_Dynamic_JS::is_http2() ) ? esc_html__( 'We have detected that your server supports HTTP/2. We recommend you leave the compiler disabled as that will improve performance of your site by allowing multiple JS files to be downloaded simultaneously.', 'Avada' ) : esc_html__( 'By default all the javascript files are combined. Disabling the JS compiler will load non-combined javascript files. This will have an impact on the performance of your site.', 'Avada' ),
 						'id'          => 'js_compiler',
-						'default'     => ( $is_http2 ) ? '0' : '1',
+						'default'     => ( Fusion_Dynamic_JS::is_http2() ) ? '0' : '1',
 						'type'        => 'switch',
 					),
 					'reset_caches_button' => array(
