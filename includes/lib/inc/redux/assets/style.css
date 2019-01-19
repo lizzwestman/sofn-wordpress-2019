@@ -406,17 +406,13 @@
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion-no-fontsize .letter-spacing {
   margin: 0;
 }
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-privacy_bar_content .ui-accordion-content .fusionredux-field-container,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-social_media_icons .ui-accordion-content .fusionredux-field-container {
   padding: 5px 0 25px;
 }
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-privacy_bar_content .ui-accordion-content .fusionredux-field-container .select3-container,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-social_media_icons .ui-accordion-content .fusionredux-field-container .select3-container,
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-privacy_bar_content .ui-accordion-content .fusionredux-field-container input,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-social_media_icons .ui-accordion-content .fusionredux-field-container input {
   width: 100% !important;
 }
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-privacy_bar_content .ui-accordion-content .wp-picker-input-wrap .button-small,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusion_theme_options-social_media_icons .ui-accordion-content .wp-picker-input-wrap .button-small {
   padding: 0 16px 1px;
 }
@@ -520,37 +516,6 @@
 }
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-repeater .fusionredux-repeater-accordion-repeater h4 {
   margin: 5px 0;
-}
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-sortable .fusionredux-sortable li {
-  margin: 0 0 10px 0 !important;
-  padding: 0 7px;
-  width: 100%;
-  line-height: 1 !important;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  background-color: #f4f2f2;
-  box-sizing: border-box;
-  position: relative;
-  text-align: center;
-  cursor: move;
-}
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-sortable .fusionredux-sortable li:last-child {
-  margin-bottom: 0 !important;
-}
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-sortable .fusionredux-sortable li span {
-  margin: 0 !important;
-  height: 34px;
-  line-height: 34px;
-}
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-sortable .fusionredux-sortable .ui-sortable-placeholder {
-  background: #f3f3f3 !important;
-  border: 1px dashed rgba(0, 0, 0, 0.1) !important;
-  visibility: visible !important;
-  box-shadow: none;
-  padding-left: 0;
-  padding-right: 0;
-  -webkit-animation: zoomIn 0.3s 1 cubic-bezier(0.77, 0, 0.175, 1);
-  animation: zoomIn 0.3s 1 cubic-bezier(0.77, 0, 0.175, 1);
-  display: block;
 }
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-color .wp-picker-container,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-color_alpha .wp-picker-container,
@@ -793,6 +758,7 @@
   padding-left: 12px;
   width: 250px !important;
   background: #f4f2f2 !important;
+  border: none !important;
   color: #333;
 }
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .expand_options {
@@ -966,8 +932,6 @@
   margin-left: 25px;
 }
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-switch .cb-enable.selected,
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-field-container .cb-enable.selected,
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-switch .ui-buttonset .ui-state-active,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-field-container .ui-buttonset .ui-state-active {
   background-image: none !important;
   box-shadow: none !important;
@@ -975,11 +939,6 @@
   border-color: rgba(0, 0, 0, 0.1) !important;
   background-color: $color_accent_2 !important;
   color: $color_text_menu_top_level_active;
-}
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-switch .ui-buttonset label[for*="buttonsetno"].ui-state-active,
-.fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-field-container .ui-buttonset label[for*="buttonsetno"].ui-state-active {
-  background: $color_back_2 !important;
-  color: $color_text_menu_top_level;
 }
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-switch .cb-disable span,
 .fusionredux-container #fusionredux-form-wrapper .fusionredux-main .fusionredux-container-switch .cb-enable span {
@@ -1748,8 +1707,7 @@
 .fusion-custom-color-scheme > div {
   padding-top: 25px;
 }
-.fusionredux-main .fusionredux-group-tab[data-rel="10"] .form-table tr:nth-child(3),
-.fusionredux-main .form-table tr.color-scheme.fusion_options {
+.fusionredux-main .fusionredux-group-tab[data-rel="10"] .form-table tr:nth-child(3) {
   border-bottom: none;
 }
 .color-scheme-selection .fusion_theme_options-color_scheme li img {
