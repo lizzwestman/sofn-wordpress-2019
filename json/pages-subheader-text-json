@@ -1,0 +1,50 @@
+ {
+    "pyre_slider_type": "no", "pyre_slider":"0", "pyre_wooslider":"", "pyre_revslider":"0", "pyre_elasticslider":"0", "pyre_slider_position":"default", "pyre_avada_rev_styles":"default", "pyre_fallback":"", "pyre_demo_slider":"", 
+    "pyre_main_top_padding":"", "pyre_main_bottom_padding":"", "pyre_hundredp_padding":"", 
+    "pyre_show_first_featured_image":"no", 
+    "pyre_display_header":"yes", "pyre_header_100_width":"default", "pyre_header_bg_color":"", "pyre_header_bg_opacity":"", "pyre_header_bg":"", "pyre_header_bg_full":"no", "pyre_header_bg_repeat":"repeat", 
+    "pyre_displayed_menu":"default", "pyre_display_footer":"default", 
+    "pyre_display_copyright":"default", "pyre_footer_100_width":"default", 
+    "pyre_sidebar_position":"default", "pyre_sidebar_sticky":"default", "pyre_sidebar_bg_color":"", 
+    "pyre_page_bg_layout":"default", "pyre_page_bg_color":"", "pyre_page_bg":"", "pyre_page_bg_full":"default", "pyre_page_bg_repeat":"default", 
+    "pyre_wide_page_bg_color":"", "pyre_wide_page_bg":"", 
+    	"pyre_wide_page_bg_full":"default", "pyre_wide_page_bg_repeat":"default", 
+
+    	"pyre_page_title":"yes", 
+    	"pyre_page_title_breadcrumbs_search_bar":"default", 
+    	"pyre_page_title_text":"default", "pyre_page_title_text_alignment":"default", 
+    		"pyre_page_title_custom_text":"", 
+    			"pyre_page_title_text_size":"", 
+    			"pyre_page_title_line_height":"", 
+    		"pyre_page_title_custom_subheader":"Whether you're planning an event, looking for something for yourself or planning to visit Norway, Sons of Norway has discounts that can assist in your unique adventure. ", 
+    			"pyre_page_title_custom_subheader_text_size":"", 
+    			"pyre_page_title_font_color":"", 
+
+    		"pyre_page_title_100_width":"default", 
+    			"pyre_page_title_height":"", 
+    			"pyre_page_title_mobile_height":"", 
+    			"pyre_page_title_bar_bg_color":"", 
+    			"pyre_page_title_bar_borders_color":"", 
+    			"pyre_page_title_bar_bg":"", 
+    			"pyre_page_title_bar_bg_retina":"", 
+    			"pyre_page_title_bar_bg_full":"default", 
+    			"pyre_page_title_bg_parallax":"default", 
+    			"pyre_fallback_id":"", 
+
+    		"pyre_combined_header_bg_color":"", 
+    			"pyre_mobile_header_bg_color":"", 
+    				"pyre_header_bg_id":"", 
+
+    		"pyre_responsive_sidebar_order":"", 
+
+    		"pyre_page_bg_id":"", 
+    		"pyre_wide_page_bg_id":"", 
+    		
+    		"pyre_page_title_subheader_font_color":"", 
+    		"pyre_page_title_bar_bg_id":"", 
+    			"pyre_page_title_bar_bg_retina_id":"", 
+
+    	"sbg_selected_sidebar":["0"], 
+    		"sbg_selected_sidebar_replacement":["default_sidebar"], 
+    			"sbg_selected_sidebar_2":["0"], "sbg_selected_sidebar_2_replacement":["default_sidebar"];
+    }
