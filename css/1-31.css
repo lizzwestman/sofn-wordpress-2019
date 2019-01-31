@@ -1,0 +1,96 @@
+/* HEADER
+================================================ */
+.fusion-row{
+    max-width: 1200px !important;
+}
+
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a, 
+.fusion-main-menu .sub-menu li a, 
+.fusion-megamenu-wrapper li .fusion-megamenu-title-disabled {
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+}
+
+.fusion-main-menu {
+     float:left;
+    position:relative;
+    z-index:200;
+    overflow:hidden;
+}
+
+/* FOOTER 
+================================================ */
+
+
+
+#wrapper .fusion-vertical-menu-widget .menu li.current-menu-item > a, 
+#wrapper .fusion-vertical-menu-widget .menu li.current_page_ancestor > a, 
+#wrapper .fusion-widget-area .current-menu-item > a, 
+#wrapper .fusion-widget-area .current-menu-item > a:before, 
+#wrapper .fusion-widget-area .current_page_item > a, 
+#wrapper .fusion-widget-area .current_page_item > a:before {
+    color: #666666 !important;
+}
+
+
+
+/* TITLE PAGE
+================================================ */
+.fusion-page-title-bar {
+    padding-top: 60px;
+}
+.layout-wide-mode .fusion-page-title-row {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+}
+
+/* breadcrumbs  
+================================================ */
+
+.fusion-breadcrumbs {
+    font-size: 12px !important;
+}
+
+/* left sidebar
+================================================ */
+.fusion-content-widget-area .widget li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #d2d2d2;
+    display: block;
+}
+.fusion-content-widget-area .widget li:last-child {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    display: block;
+}
+
+.fusion-vertical-menu-widget ul.menu li a {
+    font-weight: 600;
+}
+ 
+.fusion-vertical-menu-widget .menu li.current_page_item{
+
+    background-color: #d7d7d7;
+}
+
+.fusion-vertical-menu-widget .menu li.current-menu-item{
+    background: #e2e2e2;
+   
+}
+
+.fusion-vertical-menu-widget .menu li.current_page_item > a{
+    border-right-color: #006375;
+    border-left-color: #006375;
+    color: #888888;
+    font-weight: 400;
+}
+
+
+.fusion-vertical-menu-widget .menu li.current-menu-item > a.active {
+    color: #888888;
+}
+
+
